@@ -5,18 +5,23 @@ decimal salario = decimal.Parse( Console.ReadLine());
 Console.WriteLine("O seu salário é R$" + salario);
 Console.WriteLine("O seu nome é " + nome);
 
-decimal calculo1 = salario * 0.0075m;
+decimal irpfDevido;
 
-{
-    if (salario <= 2259.20m)
-        Console.WriteLine("Você terá isenção de IRPF, parabéns!");
-}
+if (salario <= 2259.20m)
+    irpfDevido = 0;
+else if (salario <= 2826.65m)
+    irpfDevido = salario * 0.075m - 169.21m;
+else if (salario <= 3751.65m)
+    irpfDevido = salario * 0.15m - 381.44m;
+else if (salario <= 4664.68m)
+    irpfDevido = salario * 0.225m - 662.77m;
+else
+    irpfDevido = salario * 0.275m - 896m;
 
-{
+Console.WriteLine($"Para o salário de {salario} o valor a ser pago de IRPF é de {irpfDevido}, então o salário com desconto de IRPF será de {salario - irpfDevido}");
 
-    if (salario >= 2259.21m && <= 2826.65m)
-        Console.WriteLine("Você deverá pagar R${0} de IRPF com base no seu salário, ou seja, 7,5%", calculo1);
-}
+
+
 // if (salario >= 2826.66 && <= 3751.05)
 
 
