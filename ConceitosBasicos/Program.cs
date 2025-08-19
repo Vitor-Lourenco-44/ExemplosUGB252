@@ -1,4 +1,5 @@
-﻿try
+﻿/*
+try
 {
     Console.WriteLine("Informe seu nome: ");
     string nome = Console.ReadLine();
@@ -32,7 +33,7 @@ catch (Exception e)
     Console.WriteLine(e.StackTrace);
 }
 
-
+*/
 
 
 // if (salario >= 2826.66 && <= 3751.05)
@@ -45,5 +46,15 @@ catch (Exception e)
 
 // Usando o if
 
+
+using ConceitosBasicos.uteis;
+
+SomaDoisNumeros somaDoisNumeros = new SomaDoisNumeros();
+int resultado = somaDoisNumeros.Somar(20, 22);
+Console.WriteLine(resultado);
+
+
+int milimetros = MetrosMilimetros.Converter(2);
+Console.WriteLine(milimetros);
 
 
