@@ -47,14 +47,36 @@ catch (Exception e)
 // Usando o if
 
 
+using System.Threading.Channels;
 using ConceitosBasicos.uteis;
 
-SomaDoisNumeros somaDoisNumeros = new SomaDoisNumeros();
-int resultado = somaDoisNumeros.Somar(20, 22);
-Console.WriteLine(resultado);
+string grau = "";
+Console.WriteLine("Informe o grau obtido: ");
+grau = Console.ReadLine();
+switch (grau)
+{
 
 
-int milimetros = MetrosMilimetros.Converter(2);
-Console.WriteLine(milimetros);
+    case "A":
+        SomaDoisNumeros somaDoisNumeros = new SomaDoisNumeros();
+        int resultado = somaDoisNumeros.Somar(20, 22);
+        Console.WriteLine(resultado);
+        break;
 
+    case "B":
+        int milimetros = MetrosMilimetros.Converter(2);
+        Console.WriteLine(milimetros);
+        break;
 
+    case "C":
+        CalculaAumento calculaAumento = new CalculaAumento();
+        Console.WriteLine("Informe o salário: ");
+        decimal salario = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Conforme o percentual de aumento: ");
+        float percentual = float.Parse(Console.ReadLine());
+        decimal percentualAumento = calculaAumento.Calcular(salario, percentual);
+        Console.WriteLine($"Para o salário {salario:c2}, o aumento de {percentual} corresponde a {percentualAumento}");
+        Console.WriteLine($"O novo salário é {salario + percentualAumento}");
+        break;
+
+}
