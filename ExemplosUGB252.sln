@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceitosBasicos", "ConceitosBasicos\ConceitosBasicos.csproj", "{EED35A8B-C59A-43A3-9640-547B8D12E301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConceitosBasicos", "TestConceitosBasicos\TestConceitosBasicos.csproj", "{A63E0E98-9BEC-4A49-9D6D-0441F5F03917}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EED35A8B-C59A-43A3-9640-547B8D12E301}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EED35A8B-C59A-43A3-9640-547B8D12E301}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EED35A8B-C59A-43A3-9640-547B8D12E301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63E0E98-9BEC-4A49-9D6D-0441F5F03917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63E0E98-9BEC-4A49-9D6D-0441F5F03917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63E0E98-9BEC-4A49-9D6D-0441F5F03917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63E0E98-9BEC-4A49-9D6D-0441F5F03917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
